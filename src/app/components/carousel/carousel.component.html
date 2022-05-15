@@ -1,10 +1,37 @@
-<p-carousel [value]="images" [numVisible]="3" [numScroll]="3" [autoplayInterval]="3000" orientation="vertical">
-  <ng-template pTemplate="header">
-    <h5>Vertical</h5>
-  </ng-template>
-  <ng-template let-image pTemplate="item">
-    <div>
-      <p-image [src]="image.picture" [width]="'150'"></p-image>
-    </div>
-  </ng-template>
-</p-carousel>
+<mat-drawer-container class="menu-container">
+  <mat-drawer mode="side" class="my-menu" opened>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">circle_notifications</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">person_add</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">drafts</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">favorite</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">map</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">explore</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">schedule</mat-icon> </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <mat-list-item> <mat-icon class="menu-icon">location_on</mat-icon> </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content class="carousel-container">
+    <p-carousel [value]="images" [numVisible]="3" [numScroll]="3" [autoplayInterval]="3000" orientation="vertical">
+      <ng-template let-image pTemplate="item">
+        <div>
+          <p-image [src]="image.picture" [width]="'195'"></p-image>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </mat-drawer-content>
+</mat-drawer-container>

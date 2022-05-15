@@ -9,7 +9,9 @@ type LinksIconMap = {[key: string]: string};
 })
 export class HeaderComponent implements OnInit {
   links = ['', 'Settings', 'Calendar', 'Message'];
-  icons = ['palette', 'settings', 'calendar_month', 'sms']
+  icons = ['palette', 'settings', 'calendar_month', 'sms'];
+  iconWithBadge = this.icons[3];
+
   linksIconMap: LinksIconMap = {};
 
   constructor() {

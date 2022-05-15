@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   images = [
-    {picture: 'https://picsum.photos/id/944/300/150'},
-    {picture: 'https://picsum.photos/id/1011/300/150'},
-    {picture: 'https://picsum.photos/id/984/300/150'},
-    {picture: 'https://picsum.photos/id/944/300/150'},
-    {picture: 'https://picsum.photos/id/1011/300/150'},
-    {picture: 'https://picsum.photos/id/984/300/150'},
+    {picture: 'https://picsum.photos/id/944/400/200'},
+    {picture: 'https://picsum.photos/id/1011/400/200'},
+    {picture: 'https://picsum.photos/id/984/400/200'},
+    {picture: 'https://picsum.photos/id/1016/400/200'},
+    {picture: 'https://picsum.photos/id/1015/400/200'},
+    {picture: 'https://picsum.photos/id/1018/400/200'},
   ];
 
   constructor() {

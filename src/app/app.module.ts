@@ -15,6 +15,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import {CarouselModule} from 'primeng/carousel';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import {ImageModule} from 'primeng/image';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatBadgeModule} from "@angular/material/badge";
+import {ChartModule} from 'primeng/chart';
+import { ChartComponent } from './components/chart/chart.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -23,7 +31,9 @@ import {ImageModule} from 'primeng/image';
     HeaderComponent,
     HomeViewComponent,
     NotFoundComponent,
-    CarouselComponent
+    CarouselComponent,
+    ChartComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
@@ -33,8 +43,14 @@ import {ImageModule} from 'primeng/image';
     MatTabsModule,
     MatIconModule,
     MatGridListModule,
+    MatSidenavModule,
+    MatListModule,
     CarouselModule,
-    ImageModule
+    ImageModule,
+    MatBadgeModule,
+    ChartModule,
+    NgCircleProgressModule.forRoot(),
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,8 @@
 @use '@angular/material' as mat;
 @include mat.core();
 
-$my-primary: mat.define-palette(mat.$orange-palette, 50);
-$my-accent: mat.define-palette(mat.$deep-orange-palette, A400, A200, A400);
+$my-primary: mat.define-palette(mat.$orange-palette, 500);
+$my-accent: mat.define-palette(mat.$deep-orange-palette, A400, A200, A700);
 
 $my-theme: mat.define-light-theme((
   color: (

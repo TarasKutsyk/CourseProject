@@ -4,7 +4,12 @@
     <ng-template mat-tab-label>
       <div [routerLink]="link">
         {{link  ? link : 'Dashboard'}}
-        <mat-icon color="accent">{{linksIconMap[link]}}</mat-icon>
+        <mat-icon *ngIf="linksIconMap[link] === iconWithBadge; else defaultIcon" color="accent" matBadge="5" matBadgeColor="accent">
+          {{linksIconMap[link]}}
+        </mat-icon>
+        <ng-template #defaultIcon>
+          <mat-icon color="accent">{{linksIconMap[link]}}</mat-icon>
+        </ng-template>
       </div>
     </ng-template>
   </mat-tab>
