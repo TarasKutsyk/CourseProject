@@ -31,7 +31,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/custom-theme.scss",
+              "src/styles.less",
+              "node_modules/primeng/resources/themes/saga-orange/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css"
             ],
             "scripts": []
           },
@@ -99,7 +103,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "src/custom-theme",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeng/resources/components/rating/rating.css",
+              "node_modules/primeicons/primeicons.css"
             ],
             "scripts": []
           }

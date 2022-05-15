@@ -1,0 +1,10 @@
+<p-carousel [value]="images" [numVisible]="3" [numScroll]="3" [autoplayInterval]="3000" orientation="vertical">
+  <ng-template pTemplate="header">
+    <h5>Vertical</h5>
+  </ng-template>
+  <ng-template let-image pTemplate="item">
+    <div>
+      <p-image [src]="image.picture" [width]="'150'"></p-image>
+    </div>
+  </ng-template>
+</p-carousel>
