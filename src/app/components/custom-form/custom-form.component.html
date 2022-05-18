@@ -1,0 +1,8 @@
+<form #userForm="ngForm" id="form" (ngSubmit)="submitData(userForm)" class="form-wrapper">
+  <h3>{{headerText}}</h3>
+  <mat-form-field *ngFor="let field of inputFields" color="accent" appearance="fill" >
+    <mat-label>{{labels[field]}}</mat-label>
+    <input matInput id="{{field}}" name="{{field}}" [(ngModel)]="inputData[field]" [style]="inputStyles && inputStyles[field]">
+  </mat-form-field>
+  <button class="sign-in-btn" type="submit" mat-stroked-button color="accent">{{submitText}}</button>
+</form>

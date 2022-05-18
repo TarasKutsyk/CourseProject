@@ -1,0 +1,9 @@
+<div>
+  <app-custom-form [inputData]="{
+    name: '',
+    subject: '',
+    message: ''}"
+   [inputStyles]="{message: {height: '100px'}}"
+   (processDataEvent)="sendMessage($event)"
+   [submitText]="'Send'" [headerText]="'Contact us'"></app-custom-form>
+</div>

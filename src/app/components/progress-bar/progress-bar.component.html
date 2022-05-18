@@ -11,16 +11,11 @@
   </div>
 </div>
 <div>
-  <form #userForm="ngForm" id="form" (ngSubmit)="submitUser(userForm)" class="form-wrapper">
-    <mat-form-field color="accent" appearance="fill">
-      <mat-label>Username</mat-label>
-      <input matInput id="username" name="username" [(ngModel)]="userData.name">
-    </mat-form-field>
-    <mat-form-field color="accent" appearance="fill">
-      <mat-label>Password</mat-label>
-      <input matInput id="password" name="password" [(ngModel)]="userData.password">
-    </mat-form-field>
-    <button class="sign-in-btn" type="submit" mat-stroked-button color="primary">Sign in</button>
-  </form>
+  <app-custom-form [inputData]="{
+    username: '',
+    password: ''
+  }" (processDataEvent)="submitUser($event)"
+     [submitText]="'Sign in'"
+     [headerText]="'Sign in to your account'"></app-custom-form>
 </div>
 

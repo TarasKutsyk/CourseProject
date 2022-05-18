@@ -37,13 +37,7 @@ export class ProgressBarComponent implements OnInit {
       icon: 'fa-envelope',
       link: 'https://www.gmail.com/'
     },
-
   ]
-
-  userData: User = {
-    name: '',
-    password: ''
-  }
 
   constructor(private chartService: ChartService) {
     chartService.startLoading();
@@ -55,8 +49,8 @@ export class ProgressBarComponent implements OnInit {
     })
   }
 
-  submitUser(form: NgForm) {
-    form.resetForm();
+  submitUser(user: User) {
+    console.log('User signed in: ', user);
   }
 
   ngOnInit() {

@@ -27,6 +27,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
+import { ContactViewComponent } from './views/contact-view/contact-view.component';
+import { CustomFormComponent } from './components/custom-form/custom-form.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import {MatButtonModule} from "@angular/material/button";
     NotFoundComponent,
     CarouselComponent,
     ChartComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    ContactViewComponent,
+    CustomFormComponent
   ],
   imports: [
     BrowserModule,
