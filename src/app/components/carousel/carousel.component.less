@@ -1,3 +1,5 @@
+@import "~src/styles";
+
 .carousel-container {
   padding: 15px;
 }
@@ -11,6 +13,16 @@
   color: white;
 }
 
+.icons-wrapper {
+  .centered-block();
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+  width: 50px;
+  align-items: center;
+  align-content: center;
+}
+
 .my-menu {
-  background-color: #FF5722;
+  background-color: @accent-color;
 }

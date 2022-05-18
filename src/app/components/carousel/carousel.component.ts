@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.less']
 })
 export class CarouselComponent implements OnInit {
+  icons = ['circle_notifications', 'person_add', 'drafts', 'favorite', 'map', 'explore', 'schedule', 'location_on']
+
   images = [
     {picture: 'https://picsum.photos/id/944/400/200'},
     {picture: 'https://picsum.photos/id/1011/400/200'},

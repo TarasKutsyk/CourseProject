@@ -23,6 +23,10 @@ import { ChartComponent } from './components/chart/chart.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from "@angular/material/select";
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -50,7 +54,11 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatBadgeModule,
     ChartModule,
     NgCircleProgressModule.forRoot(),
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
