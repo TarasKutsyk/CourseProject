@@ -1,0 +1,26 @@
+[
+  {
+    "avatar": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2hpdGUlMjBtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500",
+    "name": "Harry Roberts",
+    "active": false,
+    "last_seen": "1 hour"
+  },
+  {
+    "avatar": "https://images.unsplash.com/photo-1615109398623-88346a601842?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500",
+    "name": "Manik Rathee",
+    "active": false,
+    "last_seen": "5 minutes"
+  },
+  {
+    "avatar": "https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2hpdGUlMjBtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500",
+    "name": "Brad Frost",
+    "active": true,
+    "last_seen": "12 minutes"
+  },
+  {
+    "avatar": "https://images.unsplash.com/photo-1615851943632-ffb942c2fceb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2hpdGUlMjBtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500",
+    "name": "Claudio Guglieri",
+    "active": false,
+    "last_seen": "1 hour"
+  }
+]

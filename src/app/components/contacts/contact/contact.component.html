@@ -1,0 +1,17 @@
+<div class="contact">
+  <div><img [src]="contact.avatar" [alt]="contact.name + '\'s avatar'" class="my-avatar"></div>
+  <div class="contact-info">
+    <h3>{{contact.name}}</h3>
+    <p>{{contact.last_seen}} ago</p>
+  </div>
+  <div>
+    <button *ngIf="contact.active; else choose_btn" mat-icon-button color="accent">
+      <mat-icon>check_circle_outline</mat-icon>
+    </button>
+    <ng-template #choose_btn>
+      <button mat-icon-button class="choose-btn" (click)="activateUser()">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </ng-template>
+  </div>
+</div>

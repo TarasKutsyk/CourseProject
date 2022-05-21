@@ -29,7 +29,10 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
 import { CustomFormComponent } from './components/custom-form/custom-form.component';
-
+import { ContactsComponent } from './components/contacts/contacts/contacts.component';
+import { ContactComponent } from './components/contacts/contact/contact.component';
+import {DataViewModule} from 'primeng/dataview';
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { CustomFormComponent } from './components/custom-form/custom-form.compon
     ChartComponent,
     ProgressBarComponent,
     ContactViewComponent,
-    CustomFormComponent
+    CustomFormComponent,
+    ContactsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,9 @@ import { CustomFormComponent } from './components/custom-form/custom-form.compon
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    DataViewModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
