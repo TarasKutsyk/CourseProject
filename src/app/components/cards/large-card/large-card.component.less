@@ -1,0 +1,45 @@
+@import "~src/styles";
+
+.large-card {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-subscript {
+  display: flex;
+}
+
+.image-text-wrapper {
+  & p{
+    color: gray;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-basis: 40%;
+}
+
+.card-content-wrapper {
+  flex-basis: 60%;
+}
+
+.buttons-wrapper {
+  & button {
+    padding: 15px 0;
+  }
+
+  display: flex;
+  justify-content: space-between;
+}

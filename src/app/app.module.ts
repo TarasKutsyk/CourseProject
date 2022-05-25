@@ -33,6 +33,8 @@ import { ContactsComponent } from './components/contacts/contacts/contacts.compo
 import { ContactComponent } from './components/contacts/contact/contact.component';
 import {DataViewModule} from 'primeng/dataview';
 import {InputTextModule} from "primeng/inputtext";
+import { LargeCardComponent } from './components/cards/large-card/large-card.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import {InputTextModule} from "primeng/inputtext";
     ContactViewComponent,
     CustomFormComponent,
     ContactsComponent,
-    ContactComponent
+    ContactComponent,
+    LargeCardComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import {InputTextModule} from "primeng/inputtext";
     MatInputModule,
     MatButtonModule,
     DataViewModule,
-    InputTextModule
+    InputTextModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
