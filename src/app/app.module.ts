@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { HomeViewComponent } from './views/home-view/home-view.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -35,6 +36,12 @@ import {DataViewModule} from 'primeng/dataview';
 import {InputTextModule} from "primeng/inputtext";
 import { LargeCardComponent } from './components/cards/large-card/large-card.component';
 import {MatCardModule} from '@angular/material/card';
+import { ChatViewComponent } from './views/chat-view/chat-view.component';
+import { DateComponent } from './components/date/date.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import { TimeComponent } from './components/time/time.component';
+
 
 @NgModule({
   declarations: [
@@ -49,12 +56,16 @@ import {MatCardModule} from '@angular/material/card';
     CustomFormComponent,
     ContactsComponent,
     ContactComponent,
-    LargeCardComponent
+    LargeCardComponent,
+    ChatViewComponent,
+    DateComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CommonModule,
     FormsModule,
     MatTabsModule,
     MatIconModule,
@@ -73,7 +84,9 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     DataViewModule,
     InputTextModule,
-    MatCardModule
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
