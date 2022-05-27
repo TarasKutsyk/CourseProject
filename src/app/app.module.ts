@@ -41,6 +41,9 @@ import { DateComponent } from './components/date/date.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { TimeComponent } from './components/time/time.component';
+import { TrainerCardComponent } from './components/cards/trainer-card/trainer-card.component';
+import { MapCardComponent } from './components/cards/map-card/map-card.component';
+import {RatingModule} from "primeng/rating";
 
 
 @NgModule({
@@ -59,35 +62,38 @@ import { TimeComponent } from './components/time/time.component';
     LargeCardComponent,
     ChatViewComponent,
     DateComponent,
-    TimeComponent
+    TimeComponent,
+    TrainerCardComponent,
+    MapCardComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    CommonModule,
-    FormsModule,
-    MatTabsModule,
-    MatIconModule,
-    MatGridListModule,
-    MatSidenavModule,
-    MatListModule,
-    CarouselModule,
-    ImageModule,
-    MatBadgeModule,
-    ChartModule,
-    NgCircleProgressModule.forRoot(),
-    MatProgressBarModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatInputModule,
-    MatButtonModule,
-    DataViewModule,
-    InputTextModule,
-    MatCardModule,
-    MatDatepickerModule,
-    MatNativeDateModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        CommonModule,
+        FormsModule,
+        MatTabsModule,
+        MatIconModule,
+        MatGridListModule,
+        MatSidenavModule,
+        MatListModule,
+        CarouselModule,
+        ImageModule,
+        MatBadgeModule,
+        ChartModule,
+        NgCircleProgressModule.forRoot(),
+        MatProgressBarModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatInputModule,
+        MatButtonModule,
+        DataViewModule,
+        InputTextModule,
+        MatCardModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        RatingModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
