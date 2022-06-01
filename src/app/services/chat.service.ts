@@ -18,7 +18,9 @@ export class ChatService {
       return {
         name: contact.name,
         active: contact.active,
-        messages: []
+        lastSeen: contact.last_seen,
+        messagesReceived: contact.messages,
+        messagesSent: []
       }
     });
 
@@ -38,7 +40,5 @@ export class ChatService {
     const newActiveUser = this.chatUsers.find(user => user.name === newActiveUserName) as ChatUser;
     newActiveUser.active = true;
     this.activeUserSubject.next(newActiveUser);
-
-    console.log(newActiveUser);
   }
 }

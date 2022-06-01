@@ -1,5 +1,7 @@
 export interface ChatUser {
   name: string,
   active: boolean,
-  messages: string[]
+  messagesReceived: string[]
+  messagesSent: string[],
+  lastSeen: string
 }

@@ -1,0 +1,38 @@
+@import "~src/styles";
+
+.contact-message-wrapper, .user-message-wrapper {
+  display: flex;
+}
+
+.contact-message , .user-message {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  flex-basis: 45%;
+  overflow-wrap: anywhere;
+
+  padding: 10px;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.contact-message-wrapper {
+  flex-direction: row;
+}
+
+.user-message-wrapper {
+  flex-direction: row-reverse;
+}
+
+.contact-message {
+  flex-direction: row;
+  background-color: aliceblue;
+  color: rgb(85, 85, 85);
+}
+
+.user-message {
+  flex-direction: row-reverse;
+  background-color: @accent-color;
+  color: white;
+}

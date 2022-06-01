@@ -1,0 +1,22 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <h3>{{activeUser.name}}</h3>
+    <div>
+      <img src="https://www.nicepng.com/png/full/335-3354103_home-icon-button-png-green-online-icon-png.png"
+           alt="online icon">
+    </div>
+  </div>
+  <div #panel class="chat-messages-container">
+    <app-chat-message *ngFor="let message of activeUser.messagesReceived" [message]="message"></app-chat-message>
+    <p>{{activeUser.lastSeen}} ago</p>
+    <app-chat-message *ngFor="let message of activeUser.messagesSent" [message]="message"
+                      [isUserMessage]="true"></app-chat-message>
+  </div>
+  <form id="message-form">
+    <input id="messageInput" placeholder="Write a message" name="messageInput" [(ngModel)]="messageInput">
+    <button mat-icon-button (click)="sendMessage(panel)" color="accent">
+      <mat-icon>send</mat-icon>
+    </button>
+  </form>
+</div>
+

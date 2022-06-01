@@ -1,0 +1,5 @@
+<div [class.user-message-wrapper]="isUserMessage" [class.contact-message-wrapper]="!isUserMessage">
+  <div [class.user-message]="isUserMessage" [class.contact-message]="!isUserMessage">
+    {{message}}
+  </div>
+</div>

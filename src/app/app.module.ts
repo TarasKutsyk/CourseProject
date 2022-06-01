@@ -44,6 +44,9 @@ import { TimeComponent } from './components/time/time.component';
 import { TrainerCardComponent } from './components/cards/trainer-card/trainer-card.component';
 import { MapCardComponent } from './components/cards/map-card/map-card.component';
 import {RatingModule} from "primeng/rating";
+import { ChatComponent } from './components/chat/chat/chat.component';
+import { ChatMessageComponent } from './components/chat/chat-message/chat-message.component';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
 
 
 @NgModule({
@@ -64,36 +67,39 @@ import {RatingModule} from "primeng/rating";
     DateComponent,
     TimeComponent,
     TrainerCardComponent,
-    MapCardComponent
+    MapCardComponent,
+    ChatComponent,
+    ChatMessageComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        CommonModule,
-        FormsModule,
-        MatTabsModule,
-        MatIconModule,
-        MatGridListModule,
-        MatSidenavModule,
-        MatListModule,
-        CarouselModule,
-        ImageModule,
-        MatBadgeModule,
-        ChartModule,
-        NgCircleProgressModule.forRoot(),
-        MatProgressBarModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        MatInputModule,
-        MatButtonModule,
-        DataViewModule,
-        InputTextModule,
-        MatCardModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        RatingModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    FormsModule,
+    MatTabsModule,
+    MatIconModule,
+    MatGridListModule,
+    MatSidenavModule,
+    MatListModule,
+    CarouselModule,
+    ImageModule,
+    MatBadgeModule,
+    ChartModule,
+    NgCircleProgressModule.forRoot(),
+    MatProgressBarModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatButtonModule,
+    DataViewModule,
+    InputTextModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    RatingModule,
+    ScrollPanelModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
