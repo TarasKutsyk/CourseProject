@@ -1,12 +1,13 @@
-<div>
+<div class="contacts-view-component">
   <app-custom-form [inputData]="{
     name: '',
     subject: '',
     message: ''}"
    [inputStyles]="{message: {height: '100px'}}"
+   [formClass]="'contacts-form'"
    (processDataEvent)="sendMessage($event)"
    [submitText]="'Send'" [headerText]="'Contact us'"></app-custom-form>
 </div>
-<div>
+<div class="contacts-view-component">
   <app-contacts></app-contacts>
 </div>

@@ -1,4 +1,4 @@
-<mat-grid-list cols="3" [rowHeight]="'4:5'" [gutterSize]="'25'" [classList]="['grid-main']">
+<mat-grid-list cols="3" [rowHeight]="'4:5'" [gutterSize]="'25'" class="grid-main">
   <mat-grid-tile>
     <app-carousel></app-carousel>
   </mat-grid-tile>
@@ -8,15 +8,12 @@
   <mat-grid-tile>
     <app-progress-bar></app-progress-bar>
   </mat-grid-tile>
-  <mat-grid-tile [rowspan]="3" [colspan]="1">
+  <mat-grid-tile [rowspan]="3" [colspan]="1" class="contacts-view-wrapper">
     <div class="contacts-view">
       <app-contact-view></app-contact-view>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [rowspan]="1" [colspan]="2">
-    <app-large-card></app-large-card>
-  </mat-grid-tile>
-  <mat-grid-tile [rowspan]="2" [colspan]="2" class="chat-view-wrapper">
+  <mat-grid-tile [rowspan]="3" [colspan]="2" class="chat-view-wrapper">
     <div class="chat-view">
       <app-chat-view></app-chat-view>
     </div>

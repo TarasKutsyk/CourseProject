@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-view.component.less']
 })
 export class HomeViewComponent implements OnInit {
+  sendMessage(message: any) {
+    console.log('New message', message);
+  }
 
   constructor() { }
 

@@ -8,3 +8,23 @@
 .sign-in-btn {
   border: 1px solid @accent-color;
 }
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  & .mat-form-field{
+    width: 70%;
+  }
+
+  & button {
+    width: 25%;
+  }
+
+  & h3 {
+    padding-left: 20px;
+    align-self: flex-start;
+  }
+}

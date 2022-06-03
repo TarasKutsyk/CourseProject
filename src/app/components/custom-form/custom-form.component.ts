@@ -12,6 +12,8 @@ export class CustomFormComponent implements OnInit {
   @Input()
   inputStyles!: any;
   @Input()
+  formClass!: string;
+  @Input()
   submitText!: string;
   @Input()
   headerText!: string;
