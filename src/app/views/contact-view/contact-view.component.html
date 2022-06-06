@@ -1,4 +1,4 @@
-<div class="contacts-view-component">
+<div [appColoredEdge]="{width: 4}" class="contacts-view-component">
   <app-custom-form [inputData]="{
     name: '',
     subject: '',
@@ -8,6 +8,6 @@
    (processDataEvent)="sendMessage($event)"
    [submitText]="'Send'" [headerText]="'Contact us'"></app-custom-form>
 </div>
-<div class="contacts-view-component">
+<div [appColoredEdge]="{width: 4, position: bottom}"  class="contacts-view-component">
   <app-contacts></app-contacts>
 </div>

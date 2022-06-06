@@ -1,5 +1,4 @@
-<hr [color]="'orange'">
-<mat-tab-group mat-align-tabs="center" class="header-wrapper">
+<mat-tab-group [appColoredEdge]="{width: 3}"  mat-align-tabs="center" class="header-wrapper">
   <mat-tab *ngFor="let link of links">
     <ng-template mat-tab-label>
       <div [routerLink]="link">

@@ -47,6 +47,7 @@ import {RatingModule} from "primeng/rating";
 import { ChatComponent } from './components/chat/chat/chat.component';
 import { ChatMessageComponent } from './components/chat/chat-message/chat-message.component';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+import { ColoredEdge } from './directives/colored-border.directive';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
     TrainerCardComponent,
     MapCardComponent,
     ChatComponent,
-    ChatMessageComponent
+    ChatMessageComponent,
+    ColoredEdge
   ],
   imports: [
     BrowserModule,

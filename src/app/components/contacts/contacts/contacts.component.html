@@ -4,7 +4,7 @@
       <mat-label>Search</mat-label>
       <input matInput type="search" (input)="dv.filter($event.target.value, 'contains')">
     </mat-form-field>
-    <mat-icon>search</mat-icon>
+    <mat-icon class="search-icon">search</mat-icon>
   </ng-template>
   <ng-template let-contact pTemplate="listItem">
     <app-contact [contact]="contact"></app-contact>

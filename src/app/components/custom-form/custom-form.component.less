@@ -9,7 +9,8 @@
   border: 1px solid @accent-color;
 }
 
-.contacts-form {
+.contacts-form, .sign-in-form {
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,5 +27,13 @@
   & h3 {
     padding-left: 20px;
     align-self: flex-start;
+  }
+}
+
+.sign-in-form {
+  background-color: white;
+
+  & button {
+    width: 50%;
   }
 }

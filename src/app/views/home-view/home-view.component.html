@@ -5,15 +5,17 @@
   <mat-grid-tile>
     <app-chart></app-chart>
   </mat-grid-tile>
-  <mat-grid-tile>
-    <app-progress-bar></app-progress-bar>
+  <mat-grid-tile [appColoredEdge]="{position: bottom, width: 4}">
+    <div class="progress-bar-view">
+      <app-progress-bar></app-progress-bar>
+    </div>
   </mat-grid-tile>
-  <mat-grid-tile [rowspan]="3" [colspan]="1" class="contacts-view-wrapper">
+  <mat-grid-tile [rowspan]="2" [colspan]="1" class="contacts-view-wrapper">
     <div class="contacts-view">
       <app-contact-view></app-contact-view>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [rowspan]="3" [colspan]="2" class="chat-view-wrapper">
+  <mat-grid-tile [rowspan]="2" [colspan]="2" class="chat-view-wrapper">
     <div class="chat-view">
       <app-chat-view></app-chat-view>
     </div>
