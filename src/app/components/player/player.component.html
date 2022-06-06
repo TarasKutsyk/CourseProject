@@ -11,25 +11,32 @@
     </div>
     <div class="player-section-2">
       <div class="player-controls">
-        <button mat-icon-button>
+        <button mat-icon-button (click)="rewindSong(-rewindStep)">
           <mat-icon>fast_rewind</mat-icon>
         </button>
-        <button mat-icon-button>
+        <button *ngIf="!isPlaying; else pause_btn" mat-icon-button (click)="playSong()">
           <mat-icon>play_arrow</mat-icon>
         </button>
-        <button mat-icon-button>
+        <ng-template #pause_btn>
+          <button mat-icon-button (click)="pauseSong()">
+            <mat-icon>pause</mat-icon>
+          </button>
+        </ng-template>
+        <button mat-icon-button (click)="rewindSong(rewindStep)">
           <mat-icon>fast_forward</mat-icon>
         </button>
       </div>
       <div class="playback-controls">
-        <p>{{playbackValue.minutes}}:{{playbackValue.seconds}}</p>
+        <p>{{playbackValue.minutes}}:{{playbackValue.seconds >= 10 ? playbackValue.seconds :
+          '0' + playbackValue.seconds.toString()}}</p>
         <div class="playback-slider">
           <mat-progress-bar mode="determinate" color="accent" [value]="playbackProgress * 100"></mat-progress-bar>
         </div>
         <button mat-icon-button>
           <mat-icon>shuffle</mat-icon>
         </button>
-        <button mat-icon-button>
+        <button mat-icon-button [color]="isLooped ? 'primary' : ''"
+                (click)="isLooped = !isLooped">
           <mat-icon>repeat</mat-icon>
         </button>
       </div>
