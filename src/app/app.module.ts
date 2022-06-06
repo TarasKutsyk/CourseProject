@@ -48,6 +48,7 @@ import { ChatComponent } from './components/chat/chat/chat.component';
 import { ChatMessageComponent } from './components/chat/chat-message/chat-message.component';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import { ColoredEdge } from './directives/colored-border.directive';
+import { PlayerComponent } from './components/player/player.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { ColoredEdge } from './directives/colored-border.directive';
     MapCardComponent,
     ChatComponent,
     ChatMessageComponent,
-    ColoredEdge
+    ColoredEdge,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,

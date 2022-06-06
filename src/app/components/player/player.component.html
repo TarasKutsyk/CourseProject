@@ -1,0 +1,51 @@
+<div class="player-wrapper">
+  <div class="player-background"></div>
+  <div [appColoredEdge]="{width: 5, position: bottom}" class="player-content">
+    <div class="player-section-1">
+      <button mat-icon-button>
+        <mat-icon>hdr_strong</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>hdr_strong</mat-icon>
+      </button>
+    </div>
+    <div class="player-section-2">
+      <div class="player-controls">
+        <button mat-icon-button>
+          <mat-icon>fast_rewind</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>play_arrow</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>fast_forward</mat-icon>
+        </button>
+      </div>
+      <div class="playback-controls">
+        <p>{{playbackValue.minutes}}:{{playbackValue.seconds}}</p>
+        <div class="playback-slider">
+          <mat-progress-bar mode="determinate" color="accent" [value]="playbackProgress * 100"></mat-progress-bar>
+        </div>
+        <button mat-icon-button>
+          <mat-icon>shuffle</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>repeat</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="song-info">
+    <h1>{{song.name}}</h1>
+    <div>
+      <p>{{song.author}}</p>
+      <button mat-icon-button>
+        <mat-icon>favorite_border</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
