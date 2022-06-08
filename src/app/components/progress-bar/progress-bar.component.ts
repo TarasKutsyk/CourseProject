@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ChartService} from "../../services/chart.service";
-import {NgForm} from "@angular/forms";
 
 export interface User {
   name: string,
@@ -38,6 +37,7 @@ export class ProgressBarComponent implements OnInit {
       link: 'https://www.gmail.com/'
     },
   ]
+  iconsSubscripts = ['227K', '153K', '76K', '21K', '69K']
 
   constructor(private chartService: ChartService) {
     chartService.startLoading();

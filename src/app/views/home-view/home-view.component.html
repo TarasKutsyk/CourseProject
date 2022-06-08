@@ -1,9 +1,13 @@
 <mat-grid-list cols="3" [rowHeight]="'4:5'" [gutterSize]="'25'" class="grid-main">
   <mat-grid-tile>
-    <app-carousel></app-carousel>
+    <div class="carousel-wrapper">
+      <app-carousel></app-carousel>
+    </div>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-chart></app-chart>
+    <div class="chart-wrapper">
+      <app-chart></app-chart>
+    </div>
   </mat-grid-tile>
   <mat-grid-tile [appColoredEdge]="{position: bottom, width: 4}">
     <div class="progress-bar-view">

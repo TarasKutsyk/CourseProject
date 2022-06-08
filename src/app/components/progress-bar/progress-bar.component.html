@@ -1,5 +1,8 @@
 <div class="bar-wrapper">
-  {{progressStatus}}
+  <div class="progress-info">
+    <h3>{{progressStatus}}</h3>
+    <p>{{progressValue}}%</p>
+  </div>
   <mat-progress-bar mode="determinate" color="accent" [value]="progressValue"></mat-progress-bar>
 </div>
 <div class="social-media-wrapper">
@@ -8,6 +11,11 @@
       <span class="mdc-list-item__ripple"></span>
       <i class="fa {{item.icon}}" aria-hidden="true"></i>
     </a>
+  </div>
+</div>
+<div class="social-media-info">
+  <div *ngFor="let text of iconsSubscripts">
+    <p>{{text}}</p>
   </div>
 </div>
 <div>

@@ -6,5 +6,6 @@ export interface ChartData {
       label: string,
       borderColor: string,
       fill: boolean
-    }>
+    }>,
+  description: Array<string[]>
 }

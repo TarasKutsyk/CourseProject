@@ -46,9 +46,9 @@ import { MapCardComponent } from './components/cards/map-card/map-card.component
 import {RatingModule} from "primeng/rating";
 import { ChatComponent } from './components/chat/chat/chat.component';
 import { ChatMessageComponent } from './components/chat/chat-message/chat-message.component';
-import {ScrollPanelModule} from 'primeng/scrollpanel';
 import { ColoredEdge } from './directives/colored-border.directive';
 import { PlayerComponent } from './components/player/player.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 @NgModule({
@@ -102,7 +102,7 @@ import { PlayerComponent } from './components/player/player.component';
     MatDatepickerModule,
     MatNativeDateModule,
     RatingModule,
-    ScrollPanelModule
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

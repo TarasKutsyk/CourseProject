@@ -1,10 +1,67 @@
 @import "~src/styles";
 
+.mat-progress-bar {
+  height: 15px;
+}
+
+.bar-wrapper {
+  height: 20%;
+  background-color: white;
+
+  margin-bottom: 20px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & h3 {
+    margin-bottom: 10px;
+  }
+
+  & p {
+    color: @primary-color;
+  }
+}
+
 .social-media-wrapper {
+  height: 10%;
+  padding-right: 10px;
+
+  border-radius: 3px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background-color: @deep-accent-color;
+
+  & i {
+    font-size: 18px;
+  }
+}
+
+.social-media-info {
+  height: 10%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: white;
+
+  & div {
+    padding-right: 5%;
+  }
+  margin-bottom: 20px;
 }
 
 .fa {

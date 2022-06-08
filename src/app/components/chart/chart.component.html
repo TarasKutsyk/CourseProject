@@ -1,12 +1,28 @@
-<div class="circle-progress-wrapper">
-  <circle-progress
-    [percent]="progress"
-    [radius]="75"
-    [outerStrokeWidth]="16"
-    [showInnerStroke]="false"
-    [showSubtitle]="false"
-    [outerStrokeColor]="'#FF3D00'"
-    [animation]="false"
+<div class = "chart-container">
+  <div class="circle-progress-wrapper">
+    <circle-progress
+      [percent]="progress"
+      [radius]="75"
+      [outerStrokeWidth]="16"
+      [showInnerStroke]="false"
+      [showSubtitle]="false"
+      [outerStrokeColor]="'#FF3D00'"
+      [animation]="false"
     ></circle-progress>
+  </div>
+  <div>
+    <mat-button-toggle-group (change)="togglePeriod($event)">
+      <mat-button-toggle name="D" id="D" value="D" [checked] = "true">1D</mat-button-toggle>
+      <mat-button-toggle name="W" id="W" value="W">1W</mat-button-toggle>
+      <mat-button-toggle name="M" id="M" value="M">1M</mat-button-toggle>
+      <mat-button-toggle name="Y" id="Y" value="Y">1Y</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  <p-chart type="line" [data]="data"></p-chart>
+  <div *ngIf="data" class="chart-description">
+    <div *ngFor="let info of data.description">
+      <p>{{info[0]}}</p>
+      <p>{{info[1]}}</p>
+    </div>
+  </div>
 </div>
-<p-chart type="line" [data]="data"></p-chart>

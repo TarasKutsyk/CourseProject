@@ -3,3 +3,40 @@
 .circle-progress-wrapper {
   .centered-block()
 }
+
+.mat-button-toggle-standalone, mat-button-toggle-group {
+  border: none;
+  width: 100%;
+  justify-content: center;
+
+  & mat-button-toggle {
+    color: gray;
+    flex-basis: 25%;
+  }
+}
+
+.chart-description {
+  & div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & p:first-child {
+      flex-basis: 50%;
+      color: gray;
+    }
+
+    & p:last-child {
+      flex-basis: 25%;
+      color: @primary-color;
+    }
+  }
+}
+
+.active-btn {
+  background-color: @accent-color;
+}
+
+.chart-container {
+  padding: 0 40px;
+}

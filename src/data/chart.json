@@ -7,5 +7,10 @@
       "borderColor": "#FF5722",
       "fill": false
     }
+  ],
+  "description": [
+    ["12 December 2014", "+10%"],
+    ["24 December 2014", "+25%"],
+    ["05 January 2015", "+12%"]
   ]
 }
