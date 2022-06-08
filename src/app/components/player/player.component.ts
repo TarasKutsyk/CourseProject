@@ -48,14 +48,9 @@ export class PlayerComponent implements OnInit {
       .then(() => {
         this.isPlaying = true;
         this.progressIntervalId = setInterval(() => {
-          if (this.audio.paused) {
+          if (this.audio.ended) {
             this.audio.currentTime = 0;
-
-            if (this.isLooped) {
-              this.audio.play();
-            } else {
-              this.pauseSong();
-            }
+            this.pauseSong();
           }
 
           this.calculateTimeElapsed();
@@ -74,6 +69,10 @@ export class PlayerComponent implements OnInit {
     this.audio.currentTime += step;
     this.calculateTimeElapsed();
     this.calculateProgress();
+  }
+
+  loopAudioSwitch() {
+    this.audio.loop = !this.audio.loop;
   }
 
   ngOnInit(): void {

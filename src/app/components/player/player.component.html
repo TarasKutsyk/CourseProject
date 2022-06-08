@@ -3,10 +3,10 @@
   <div [appColoredEdge]="{width: 5, position: bottom}" class="player-content">
     <div class="player-section-1">
       <button mat-icon-button>
-        <mat-icon>hdr_strong</mat-icon>
+        <mat-icon class="volume-btn">volume_down_alt</mat-icon>
       </button>
       <button mat-icon-button>
-        <mat-icon>hdr_strong</mat-icon>
+          <mat-icon class="settings-btn">settings</mat-icon>
       </button>
     </div>
     <div class="player-section-2">
@@ -35,8 +35,8 @@
         <button mat-icon-button>
           <mat-icon>shuffle</mat-icon>
         </button>
-        <button mat-icon-button [color]="isLooped ? 'primary' : ''"
-                (click)="isLooped = !isLooped">
+        <button mat-icon-button [color]="audio.loop ? 'primary' : ''"
+                (click)="loopAudioSwitch()">
           <mat-icon>repeat</mat-icon>
         </button>
       </div>
