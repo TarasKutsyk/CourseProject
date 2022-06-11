@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 import playerSong from '../../../data/player_song.json';
 import {PlayerSong} from "../../models/PlayerSong";
@@ -9,7 +9,7 @@ import {Position} from "../../directives/colored-border.directive";
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.less']
 })
-export class PlayerComponent implements OnInit {
+export class PlayerComponent implements OnInit, OnDestroy {
   top = Position.top;
   bottom = Position.bottom;
 
@@ -76,6 +76,10 @@ export class PlayerComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy(): void {
+    this.audio.pause();
   }
 
 }
