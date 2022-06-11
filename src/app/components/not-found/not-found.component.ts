@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.less']
 })
 export class NotFoundComponent implements OnInit {
+  imgPath = 'assets/not_found.jpg';
 
   constructor() { }
 

@@ -49,6 +49,7 @@ import { ChatMessageComponent } from './components/chat/chat-message/chat-messag
 import { ColoredEdge } from './directives/colored-border.directive';
 import { PlayerComponent } from './components/player/player.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { PlaceholderComponent } from './components/placeholder/placeholder.component';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     ChatComponent,
     ChatMessageComponent,
     ColoredEdge,
-    PlayerComponent
+    PlayerComponent,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,

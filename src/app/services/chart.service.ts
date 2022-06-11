@@ -33,7 +33,7 @@ export class ChartService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(currentProgress + 1);
-      }, 100);
+      }, 50);
     });
   }
 }
