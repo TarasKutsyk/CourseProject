@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Subject} from "rxjs";
 import {ChartData} from '../models/Chart'
-import data from '../../data/chart.json'
+import data from '../../assets/data/chart.json'
 
 @Injectable({
   providedIn: 'root'

@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import {Subject} from "rxjs";
 
 import {Contact} from '../models/Contact';
-import contacts from '../../data/contacts.json';
-import {ChatUser} from "../models/ChatUser";
+import contacts from '../../assets/data/contacts.json';
 
 @Injectable({
   providedIn: 'root'

@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 
-import playerSong from '../../../data/player_song.json';
+import playerSong from '../../../assets/data/player_song.json';
 import {PlayerSong} from "../../models/PlayerSong";
 import {Position} from "../../directives/colored-border.directive";
 
@@ -13,7 +13,7 @@ export class PlayerComponent implements OnInit, OnDestroy {
   top = Position.top;
   bottom = Position.bottom;
 
-  audio: HTMLAudioElement = new Audio('../../../assets/Ievan_Polkka.mp3');
+  audio: HTMLAudioElement = new Audio('assets/Ievan_Polkka.mp3');
   song: PlayerSong = playerSong;
 
   isPlaying = false;
