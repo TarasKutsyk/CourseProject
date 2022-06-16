@@ -12,12 +12,25 @@ export class ChartComponent implements OnInit, AfterViewInit {
   currentBtnId = 'D-button';
   progress = 0;
   data?: ChartData;
+  options?: any;
 
   constructor(private chartService: ChartService) {
     this.chartService.currentProgress.subscribe(progress => this.progress = progress);
 
     chartService.chartData.subscribe(data => {
       this.data = data;
+      this.options = {
+        scales: {
+          x: {
+            display: false
+          },
+          y: {
+            ticks: {
+              callback: () => ''
+            }
+          },
+        }
+      };
     });
   }
 

@@ -18,7 +18,7 @@
       <mat-button-toggle name="Y" id="Y" value="Y">1Y</mat-button-toggle>
     </mat-button-toggle-group>
   </div>
-  <p-chart type="line" [data]="data"></p-chart>
+  <p-chart type="line" [data]="data" [options]="options"></p-chart>
   <div *ngIf="data" class="chart-description">
     <div *ngFor="let info of data.description">
       <p>{{info[0]}}</p>
